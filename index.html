@@ -7,6 +7,7 @@
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
       * {
         margin: 0;
         padding: 0;
@@ -21,8 +22,8 @@
         background-position: center;
         background: linear-gradient(
           178.6deg,
-          rgb(20, 36, 50) 11.8%,
-          rgb(124, 143, 161) 83.8%
+          rgb(124, 143, 161) 11.8%,
+          rgb(20, 36, 50) 83.8%
         );
       }
 
@@ -38,24 +39,15 @@
         align-items: center;
       }
 
-      .content h1 {
-        font-size: 45px;
-        font-family: "Roboto", sans-serif;
-        /* color: #fff; */
-        font-weight: 700;
-      }
-
       .content h2 {
-        font-size: 20px;
-        font-family: "Roboto", sans-serif;
-        /* color: #fff; */
-        font-weight: 700;
-        margin-bottom: 20px;
+        font-size: 40px;
+        font-family: "Sedgwick Ave Display", cursive;
+        color: black;
       }
       .content p {
-        font-size: 23px;
-        font-family: "Roboto", sans-serif;
-        /* color: #fff; */
+        font-size: 24px;
+        font-family: "Sedgwick Ave Display", cursive;
+        color: black;
       }
 
       /* === removing default button style ===*/
@@ -106,8 +98,8 @@
       .square {
         position: relative;
         margin: 0 10px;
-        width: 600px;
-        height: 600px;
+        width: 650px;
+        height: 650px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -124,8 +116,8 @@
       }
 
       .twitch:hover .one {
-        border: none;
-        background: rgb(20, 36, 50);
+        border: 2px solid black;
+        background: rgb(124, 143, 161);
       }
 
       .square .two {
@@ -141,8 +133,8 @@
       }
 
       .twitch:hover .two {
-        border: none;
-        background: rgb(20, 36, 50);
+        border: 2px solid black;
+        background: rgb(124, 143, 161);
       }
 
       .square .three {
@@ -157,8 +149,8 @@
         animation: animate2 10s linear infinite;
       }
       .twitch:hover .three {
-        border: none;
-        background: rgb(20, 36, 50);
+        border: 2px solid black;
+        background: rgb(124, 143, 161);
       }
 
       .circle {
@@ -169,10 +161,22 @@
         z-index: 1000;
       }
 
-      img {
-        /* opacity: 0.5; */
-        width: 100%;
+      .img1 {
+        position: relative;
+        z-index: 2;
+        top: 22px;
+        width: 90%;
         height: auto;
+        /* opacity: 0.5; */
+      }
+
+      .img2 {
+        position: relative;
+        z-index: 1;
+        left: 25px;
+        width: 90%;
+        height: auto;
+        /* opacity: 0; */
       }
 
       .square:hover {
@@ -215,10 +219,12 @@
           <span class="three"></span>
           <div class="circle">
             <!-- <h1 class="ArachnoThenix">ArachnoThenix</h1> -->
-            <img src="./logo.png" />
+            <img class="img1" src="./logo3.png" />
+            <img class="img2" src="./logo2.png" />
             <h2>Abu Gainz</h2>
-            <p>ArachnoThenix: Lvl3 PT / Street Workouts</p>
-            <p>ArachnoTherapy: Sports Therapy/Massage</p>
+            <p>Level 3 Personal Trainer</p>
+            <p>Street Workouts</p>
+            <p>Sports Therapy/Massage</p>
             <br />
             <a
               href="https://instagram.com/arachnothenix"
